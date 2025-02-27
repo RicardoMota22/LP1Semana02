@@ -92,13 +92,24 @@ namespace ValoresEspeciais
 
             //Exercicio 7 Overflows
 
-            int i = short.MaxValue; //32767
-            Console.WriteLine((short) (i + 1)); 
+            //int i = short.MaxValue; //32767
+            //Console.WriteLine((short) (i + 1)); 
 
             //Overflow Uints
 
-            uint ui = uint.MaxValue; //32767
+            uint ui = uint.MaxValue; //4294967295
             Console.WriteLine((uint) (ui + 1)); 
+
+            // Overflow 2 ways Float
+
+            //double x = 2 * double.MaxValue;
+            //double x1 = double.MaxValue + 1;
+
+            float f = 2 * float.MaxValue;
+            float f1 = float.MaxValue + 1;
+            Console.WriteLine(f); 
+            Console.WriteLine(f1); 
+
 
             
 
