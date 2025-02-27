@@ -31,7 +31,7 @@ namespace ValoresEspeciais
             Console.WriteLine($"float: Min = {float.MinValue}, Max = {float.MaxValue}");
             Console.WriteLine($"double: Min = {double.MinValue}, Max = {double.MaxValue}");
             Console.WriteLine($"decimal: Min = {decimal.MinValue}, Max = {decimal.MaxValue}");
-            */
+            
             
             sbyte sb1 = sbyte.MaxValue;
             sbyte sb2 = sbyte.MinValue;
@@ -85,10 +85,28 @@ namespace ValoresEspeciais
             double z= double. PositiveInfinity / double. PositiveInfinity;//NaN
             float z1= float.NaN;//Direct
             Console.WriteLine(z);
-            Console.WriteLine(z1); 
+            Console.WriteLine(z1);
+
+            */ 
 
 
-            //Exercicio 7 
+            //Exercicio 7 Overflows
+
+            int i = short.MaxValue; //32767
+            Console.WriteLine((short) (i + 1)); 
+
+            //Overflow Uints
+
+            uint ui = uint.MaxValue; //32767
+            Console.WriteLine((uint) (ui + 1)); 
+
+            
+
+
+
+
+
+
         }
     }
 }
