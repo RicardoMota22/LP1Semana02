@@ -44,11 +44,12 @@ namespace ChatGPTOne
                         response = "I don't recognize that question";
                         break;
                 }
+                 // Responder adequadamente
+                Console.WriteLine(response); //Here it works
             } while (response != "EXIT");
            
-            // Responder adequadamente
-            Console.WriteLine(response);
             
+            //Console.WriteLine was out of the loop
 
             
 
