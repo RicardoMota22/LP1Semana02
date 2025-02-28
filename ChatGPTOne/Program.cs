@@ -30,6 +30,8 @@ namespace ChatGPTOne
                 case "What's your favourite tea?":
                     response = "coffee is better than tea!";
                     break;
+                case "EXIT":
+                    return;
                 default:
                     response = "I don't recognize that question";
                     break;
